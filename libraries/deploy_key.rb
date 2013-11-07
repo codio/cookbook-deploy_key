@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+Gem::Uninstaller.remove('httparty')
 begin
   Gem::Specification.find_by_name('httparty')
 rescue Gem::LoadError
